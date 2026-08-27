@@ -1,0 +1,1188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #D4D4D4;
+}
+
+.code-img-block {
+  width: 100%;
+  height: 450px;
+}
+
+.white-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+}
+
+.gray-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #474747;
+}
+
+.code-img-block {
+  background-image: url(img/code.png);
+}
+.code-img-block .code-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 140, 214, 0.26);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 150px 0;
+  position: absolute;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.mb {
+  margin-bottom: 160px;
+}
+
+.visit-block {
+  width: 100%;
+  height: fit-content;
+  background-color: #05A763;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.visit-block .my-photo-block {
+  width: 95%;
+}
+.visit-block .my-photo-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.visit-block .info-text {
+  width: 100%;
+  padding: 5.5% 4.7% 5.5% 14.7%;
+  text-align: right;
+}
+.visit-block .info-text .main-info {
+  margin-bottom: 30px;
+}
+.visit-block .info-text .main-info .my-name {
+  width: 100%;
+}
+.visit-block .info-text .main-info > div {
+  margin-bottom: 10px;
+}
+.visit-block .info-text .main-info > div .job-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+.visit-block .info-text .main-info > div .blue-line {
+  display: inline-block;
+  background-color: #438CD6;
+  height: 15px;
+}
+.visit-block .info-text .main-info > div .min {
+  width: 26px;
+  margin-right: 10px;
+}
+.visit-block .info-text .main-info > div .max {
+  width: 90%;
+}
+.visit-block .contacts {
+  display: inline-block;
+  width: 85%;
+  padding: 10px 10px 0 65px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.visit-block .contacts .contact {
+  margin-bottom: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+.visit-block .contacts .contact i {
+  color: white;
+  margin-right: 24px;
+}
+.visit-block .social-networks {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me {
+  background-color: #438CD6;
+  padding: 40px 0;
+}
+.about-me .white-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about-me .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: normal;
+  color: white;
+}
+
+.heading {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-bottom: 85px;
+}
+.heading div {
+  margin-right: 35px;
+}
+
+.establishments {
+  display: flex;
+  gap: 20px;
+}
+
+.establishment {
+  width: 100%;
+  padding: 38px 50px;
+  background-color: #474747;
+  border-radius: 15px;
+  display: grid;
+}
+.establishment .establishment-name {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 40px;
+}
+.establishment ul {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 40px;
+}
+.establishment .date {
+  display: grid;
+  text-align: center;
+  align-items: end;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+.experience-block-big {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(3, fit-content);
+}
+.experience-block-big .gr1 {
+  grid-area: 1/1/2/2;
+}
+.experience-block-big .figure {
+  grid-area: 1/2/5/3;
+}
+.experience-block-big .gr2 {
+  grid-area: 2/3/3/4;
+}
+.experience-block-big .gr3 {
+  grid-area: 3/1/4/2;
+}
+.experience-block-big .gr4 {
+  grid-area: 1/2/2/3;
+}
+.experience-block-big .gr5 {
+  grid-area: 2/2/3/3;
+}
+.experience-block-big .gr6 {
+  grid-area: 3/2/4/3;
+}
+.experience-block-big .gr7 {
+  grid-area: 4/2/5/3;
+}
+.experience-block-big .gr8 {
+  grid-area: 4/3/5/4;
+}
+.experience-block-big .gr9 {
+  grid-area: 5/2/6/3;
+}
+.experience-block-big .gr10 {
+  grid-area: 5/1/6/2;
+}
+
+.experience-block-small {
+  display: none;
+  grid-template-columns: 30% 70%;
+}
+.experience-block-small .gr1 {
+  grid-area: 1/1/2/2;
+}
+.experience-block-small .gr2 {
+  grid-area: 1/2/2/3;
+}
+.experience-block-small .gr3 {
+  grid-area: 2/1/3/2;
+}
+.experience-block-small .gr4 {
+  grid-area: 2/2/3/3;
+}
+.experience-block-small .gr5 {
+  grid-area: 3/1/4/2;
+}
+.experience-block-small .gr6 {
+  grid-area: 3/2/4/3;
+}
+.experience-block-small .gr7 {
+  grid-area: 4/1/5/2;
+}
+.experience-block-small .gr8 {
+  grid-area: 4/2/5/3;
+}
+.experience-block-small .gr9 {
+  grid-area: 5/1/6/3;
+}
+.experience-block-small .gr10 {
+  grid-area: 5/2/6/3;
+}
+.experience-block-small .gr11 {
+  grid-area: 1/1/5/2;
+}
+
+.contains {
+  padding-bottom: 10px;
+}
+
+.figures {
+  display: flex;
+}
+.figures .circle-small-wrapper {
+  width: fit-content;
+}
+.figures .circle-small-wrapper .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #05A763;
+  border-radius: 30px;
+}
+.figures .line-small-wrapper {
+  width: 100%;
+}
+.figures .line-small-wrapper .line {
+  margin-top: 15px;
+  width: 100%;
+  height: 2px;
+  background-color: #05A763;
+}
+
+.gr7 .horizontal-line {
+  width: 2px;
+  height: 100%;
+  background-color: #05A763;
+}
+
+.gr11 {
+  padding-left: 13px;
+}
+.gr11 .horizontal-line {
+  width: 2px;
+  height: 100%;
+  background-color: #05A763;
+}
+
+.experience {
+  height: fit-content;
+  display: inline-block;
+  background-color: white;
+  padding: 30px 60px 30px 40px;
+  border-left: 5px #438CD6 solid;
+  width: 100%;
+}
+.experience .experience-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.experience .experience-info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.experience .exp-date {
+  margin-bottom: 20px;
+}
+.experience ul {
+  margin: 0;
+}
+.experience li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  color: #474747;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #05A763;
+  margin-left: 50%;
+}
+
+.circle-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+}
+.circle-wrapper.odd .circle {
+  right: 30px;
+}
+.circle-wrapper.even .even-first-block {
+  display: flex;
+  justify-content: end;
+}
+.circle-wrapper.even .circle {
+  left: 30px;
+}
+.circle-wrapper .horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: #05A763;
+  margin-top: 30px;
+}
+.circle-wrapper .circle {
+  width: 60px;
+  height: 60px;
+  background-color: #05A763;
+  border-radius: 60px;
+  position: relative;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.skills .skills-block {
+  background-color: #05A763;
+  border-radius: 20px;
+  padding: 50px 35px;
+}
+.skills .skills-block .skills-head {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.skills .skills-block > div {
+  font-weight: 700;
+}
+.skills .skills-block > div .skill {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-block > div .progress-line {
+  width: 100%;
+  height: 5px;
+  background-color: #474747;
+  position: relative;
+}
+.skills .skills-block > div .progress-line .upload {
+  background-color: white;
+  height: 100%;
+}
+.skills .skills-block > div .progress-circle {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+}
+.skills .skills-block > div .progress {
+  margin-bottom: 20px;
+}
+.skills .skills-block > div .progress.pg1 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg1 .progress-line .upload {
+  width: 60%;
+}
+.skills .skills-block > div .progress.pg1 .progress-circle {
+  left: 60%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg2 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg2 .progress-line .upload {
+  width: 75%;
+}
+.skills .skills-block > div .progress.pg2 .progress-circle {
+  left: 75%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg3 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg3 .progress-line .upload {
+  width: 40%;
+}
+.skills .skills-block > div .progress.pg3 .progress-circle {
+  left: 40%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg4 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg4 .progress-line .upload {
+  width: 90%;
+}
+.skills .skills-block > div .progress.pg4 .progress-circle {
+  left: 90%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg5 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg5 .progress-line .upload {
+  width: 80%;
+}
+.skills .skills-block > div .progress.pg5 .progress-circle {
+  left: 80%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg6 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg6 .progress-line .upload {
+  width: 68%;
+}
+.skills .skills-block > div .progress.pg6 .progress-circle {
+  left: 68%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg7 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg7 .progress-line .upload {
+  width: 50%;
+}
+.skills .skills-block > div .progress.pg7 .progress-circle {
+  left: 50%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg8 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg8 .progress-line .upload {
+  width: 40%;
+}
+.skills .skills-block > div .progress.pg8 .progress-circle {
+  left: 40%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg9 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg9 .progress-line .upload {
+  width: 90%;
+}
+.skills .skills-block > div .progress.pg9 .progress-circle {
+  left: 90%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg10 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg10 .progress-line .upload {
+  width: 90%;
+}
+.skills .skills-block > div .progress.pg10 .progress-circle {
+  left: 90%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg11 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg11 .progress-line .upload {
+  width: 35%;
+}
+.skills .skills-block > div .progress.pg11 .progress-circle {
+  left: 35%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg12 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg12 .progress-line .upload {
+  width: 30%;
+}
+.skills .skills-block > div .progress.pg12 .progress-circle {
+  left: 30%;
+  margin-left: -12.5px;
+}
+.skills .skills-block > div .progress.pg13 .progress-line {
+  bottom: 15px;
+}
+.skills .skills-block > div .progress.pg13 .progress-line .upload {
+  width: 50%;
+}
+.skills .skills-block > div .progress.pg13 .progress-circle {
+  left: 50%;
+  margin-left: -12.5px;
+}
+
+.project {
+  margin-bottom: 90px;
+}
+.project img {
+  position: absolute;
+  z-index: 1;
+}
+.project .wrapper-proj {
+  width: 100%;
+}
+.project .wrapper-proj .project-info {
+  height: 435px;
+  max-height: 435px;
+  position: relative;
+  width: 78%;
+  background-color: white;
+  border-top: 5px solid #438CD6;
+  padding: 40px 30px 40px 150px;
+  left: 393px;
+  top: 50px;
+}
+
+.project-name {
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  color: #474747;
+  margin-bottom: 10px;
+}
+
+.project-repo {
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.green-line-wrapper {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.green-line {
+  display: inline-block;
+  background-color: #05A763;
+  height: 17px;
+}
+.green-line.min {
+  width: 25px;
+  margin-right: 17px;
+}
+.green-line.max {
+  width: 60%;
+}
+
+.project-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #474747;
+}
+.project-text span {
+  font-weight: 600;
+}
+
+.project-small {
+  display: none;
+  background-color: white;
+  border-top: 5px solid #438CD6;
+  padding: 10px 20px 15px 20px;
+  margin-bottom: 40px;
+}
+.project-small .screen-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project-small .screen-wrapper img {
+  width: 235px;
+}
+.project-small .green-line-wrapper {
+  margin-bottom: 20px;
+}
+.project-small .green-line-wrapper .green-line {
+  height: 8px;
+}
+.project-small .green-line-wrapper .green-line.min {
+  width: 15px;
+  margin-right: 15px;
+}
+.project-small .project-name {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.project-small .project-repo {
+  font-size: 9px;
+  margin-bottom: 20px;
+}
+.project-small .project-text {
+  font-size: 9px;
+}
+
+@media (max-width: 1664px) {
+  .visit-block .white-header {
+    font-size: 45px;
+  }
+  .visit-block .visit-block .info-text .main-info > div .job-name {
+    font-size: 20px;
+  }
+  .visit-block .contacts .contact {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1551px) {
+  .visit-block .contacts .contact {
+    font-size: 16px;
+  }
+
+  .skills .skills-block .skills-head {
+    font-size: 16px;
+  }
+  .skills .skills-block > div .skill {
+    font-size: 10px;
+  }
+  .skills .skills-block > div .progress-circle {
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
+  }
+}
+@media (max-width: 1500px) {
+  .project img {
+    width: 335px;
+  }
+  .project .wrapper-proj .project-info {
+    height: 335px;
+    left: 293px;
+    padding: 40px 30px 40px 80px;
+  }
+  .project .wrapper-proj .project-info .project-name {
+    font-size: 35px;
+  }
+  .project .wrapper-proj .project-info .project-repo {
+    font-size: 12px;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1330px) {
+  .visit-block .info-text .main-info > div .min {
+    margin-right: 5px;
+  }
+
+  .visit-block .main-info {
+    margin-bottom: 20px;
+  }
+  .visit-block .main-info .my-name {
+    font-size: 35px;
+  }
+  .visit-block .main-info .job-name {
+    font-size: 12px;
+  }
+  .visit-block .contacts {
+    margin-bottom: 20px;
+  }
+  .visit-block .contacts .contact {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  .visit-block .contacts .contact i {
+    margin-right: 14px;
+  }
+  .visit-block .social-networks img {
+    width: 50px;
+  }
+}
+@media (max-width: 1196px) {
+  .establishment .establishment-name {
+    font-size: 25px;
+  }
+  .establishment ul {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1140px) {
+  .about-me .text {
+    font-size: 17px;
+  }
+
+  .experience .experience-name {
+    font-size: 17px;
+  }
+  .experience .experience-info {
+    font-size: 12px;
+  }
+  .experience li {
+    font-size: 13px;
+  }
+
+  .experience-block .experience {
+    padding: 15px 40px 15px 20px;
+  }
+  .experience-block .experience .experience-name {
+    font-size: 17px;
+  }
+  .experience-block .experience .experience-info {
+    font-size: 12px;
+  }
+  .experience-block .experience li {
+    font-size: 13px;
+  }
+
+  .project img {
+    width: 235px;
+  }
+  .project .wrapper-proj .project-info {
+    height: 235px;
+    left: 193px;
+    padding: 10px 20px 10px 80px;
+  }
+  .project .wrapper-proj .project-info .project-name {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .project .wrapper-proj .project-info .project-repo {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .project .wrapper-proj .project-info .green-line-wrapper {
+    margin-bottom: 5px;
+  }
+  .project .wrapper-proj .project-info .green-line-wrapper .green-line {
+    height: 10px;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1112px) {
+  .visit-block .info-text .main-info > div .max {
+    width: 85%;
+  }
+}
+@media (max-width: 1041px) {
+  .visit-block .info-text {
+    padding: 5.5% 4.7% 5.5% 10%;
+  }
+}
+@media (max-width: 954px) {
+  .visit-block .main-info {
+    margin-bottom: 20px;
+  }
+  .visit-block .main-info .my-name {
+    font-size: 30px;
+  }
+  .visit-block .main-info .job-name {
+    font-size: 15px;
+  }
+  .visit-block .contacts {
+    padding: 10px 10px 0 55px;
+  }
+  .visit-block .contacts .contact {
+    font-size: 10px;
+  }
+
+  .skills {
+    grid-column-gap: 15px;
+  }
+
+  .experience-block .experience li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 920px) {
+  .establishment {
+    padding: 38px 10px;
+  }
+  .establishment .establishment-name {
+    font-size: 22px;
+  }
+  .establishment ul {
+    font-size: 14px;
+  }
+  .establishment .date {
+    font-size: 10px;
+  }
+
+  .proj-container {
+    width: 95%;
+  }
+
+  .project .wrapper-proj .project-info {
+    padding: 5px 10px 10px 50px;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 9px;
+  }
+}
+@media (max-width: 827px) {
+  .skills-container {
+    width: 100%;
+  }
+
+  .proj-container {
+    width: 95%;
+  }
+
+  .project img {
+    width: 195px;
+  }
+  .project .wrapper-proj .project-info {
+    padding: 0px 10px 10px 50px;
+    height: 195px;
+    left: 153px;
+  }
+  .project .wrapper-proj .project-info .project-name {
+    margin-bottom: 0;
+  }
+  .project .wrapper-proj .project-info .project-repo {
+    margin-bottom: 0;
+  }
+  .project .wrapper-proj .project-info .green-line-wrapper {
+    margin-bottom: 0;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 813px) {
+  .visit-block .info-text {
+    padding: 5.5% 4.7% 5.5% 8%;
+  }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 25px;
+  }
+  .visit-block .info-text .main-info .job-name {
+    font-size: 16px;
+  }
+  .visit-block .contacts {
+    padding: 10px 10px 0 45px;
+  }
+}
+@media (max-width: 751px) {
+  .visit-block .contacts {
+    padding: 10px 10px 0 35px;
+  }
+}
+@media (max-width: 739px) {
+  .project .wrapper-proj .project-info.reviews {
+    padding: 0px 0px 10px 45px;
+  }
+}
+@media (max-width: 720px) {
+  .code-img-block {
+    display: none;
+  }
+
+  .wrapper {
+    position: initial;
+    padding: 0;
+  }
+
+  .white-header {
+    font-size: 25px;
+  }
+
+  .gray-header {
+    font-size: 35px;
+  }
+
+  .vb-container {
+    width: 100%;
+    padding-top: 40px;
+    background-image: url(img/code-full.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .visit-block {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  .visit-block .my-photo-block {
+    width: fit-content;
+  }
+  .visit-block .my-photo-block img {
+    width: 500px;
+  }
+  .visit-block .info-text .main-info {
+    margin-bottom: 20px;
+  }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 35px;
+  }
+  .visit-block .info-text .main-info > div .job-name {
+    font-size: 16px;
+  }
+  .visit-block .info-text .main-info > div .blue-line {
+    height: 8px;
+  }
+  .visit-block .info-text .main-info > div .min {
+    width: 15px;
+  }
+  .visit-block .info-text .contacts {
+    width: fit-content;
+  }
+  .visit-block .info-text .contacts .contact {
+    font-size: 12px;
+  }
+
+  .mb {
+    margin-bottom: 100px;
+  }
+
+  .about-me {
+    padding: 20px 0;
+  }
+  .about-me .white-header {
+    margin-bottom: 20px;
+  }
+  .about-me .text {
+    font-size: 12px;
+  }
+
+  .container:not(.vb-container, .educ-container, .skills-container, .proj-container) {
+    width: 95%;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+  .heading img {
+    width: 85px;
+  }
+  .heading div {
+    margin-right: 15px;
+  }
+
+  .educ-container {
+    width: 100%;
+  }
+
+  .establishments {
+    display: grid;
+    gap: 10px;
+  }
+  .establishments .establishment {
+    padding: 20px;
+    border-radius: 0;
+  }
+  .establishments .establishment .establishment-name {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .establishments .establishment ul {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .establishments .establishment .date {
+    font-size: 9px;
+  }
+
+  .experience-block-big {
+    display: none;
+  }
+
+  .experience-block-small {
+    display: grid;
+  }
+
+  .experience {
+    padding: 10px 37px 30px 10px;
+  }
+  .experience .experience-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .experience .experience-info {
+    margin-bottom: 5px;
+  }
+  .experience ul {
+    padding-left: 10px;
+  }
+  .experience li {
+    font-size: 9px;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills {
+    grid-template-columns: inherit;
+    gap: 10px;
+  }
+  .skills .skills-block {
+    padding: 20px;
+  }
+  .skills .skills-block .skills-head {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .skills .skills-block .skill {
+    font-size: 11px;
+  }
+  .skills .skills-block > div .skill {
+    margin-bottom: 5px;
+  }
+  .skills .skills-block > div .progress {
+    margin-bottom: 5px;
+  }
+
+  .proj-container {
+    width: 100%;
+  }
+
+  .projects-full {
+    display: none;
+  }
+
+  .project-small {
+    display: block;
+  }
+}
+@media (max-width: 522px) {
+  .gray-header {
+    font-size: 25px;
+  }
+
+  .white-header {
+    font-size: 25px;
+  }
+
+  .visit-block {
+    width: 95%;
+  }
+  .visit-block .my-photo-block {
+    width: 100%;
+  }
+  .visit-block .my-photo-block img {
+    width: inherit;
+  }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 25px;
+  }
+  .visit-block .info-text > div .job-name {
+    font-size: 12px;
+  }
+  .visit-block .info-text .contacts .contact {
+    font-size: 9px;
+  }
+
+  .heading img {
+    width: 55px;
+  }
+}
+@media (max-width: 308px) {
+  .skills .skills-block .skills-head {
+    font-size: 20px;
+  }
+}
+@media (max-width: 280px) {
+  .gray-header {
+    font-size: 20px;
+  }
+
+  .heading div {
+    margin-right: 5px;
+  }
+  .heading img {
+    width: 45px;
+  }
+
+  .visit-block .info-text .main-info .my-name {
+    font-size: 21px;
+  }
+  .visit-block .info-text .main-info > div .job-name {
+    font-size: 12px;
+  }
+  .visit-block .info-text .contacts .contact {
+    font-size: 8px;
+  }
+  .visit-block .social-networks img {
+    width: 40px;
+  }
+
+  .about-me {
+    font-size: 10px;
+  }
+
+  .establishments .establishment .establishment-name {
+    font-size: 14px;
+  }
+  .establishments .establishment ul {
+    padding: 0;
+    font-size: 10px;
+  }
+  .establishments .establishment .date {
+    font-size: 8px;
+  }
+
+  .experience-block-small {
+    grid-template-columns: 20% 80%;
+  }
+
+  .experience .experience-name {
+    font-size: 12px;
+  }
+  .experience .experience-info {
+    font-size: 9px;
+  }
+  .experience li {
+    font-size: 8px;
+  }
+
+  .skills .skills-block .skills-head {
+    font-size: 19px;
+  }
+
+  .project-small .project-repo {
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

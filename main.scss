@@ -1,0 +1,1304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #D4D4D4;
+}
+
+$gray: #474747;
+$blue: #438CD6;
+$green: #05A763;
+$min-margin: 10px;
+$max-margin: 160px;
+$after-heading-margin: 85px;
+
+
+%full-width-block{
+    width: 100%;
+    height: 450px;
+}
+
+@mixin white-text-with-weight($size, $weight){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: white;
+}
+@mixin white-text($size){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    color: white;
+}
+@mixin gray-text-with-weight($size, $weight){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $gray;
+}
+@mixin gray-text($size){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    color: $gray;
+}
+@mixin set-block($width, $height, $background){
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+
+.white-header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+}
+.gray-header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: $gray;
+}
+
+
+
+.code-img-block{
+    @extend %full-width-block;
+    background-image: url(img/code.png);
+    .code-background{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(67, 140, 214, 0.26);
+    }
+}
+.wrapper{
+    width: 100%;
+    padding: 150px 0;
+    position: absolute;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+.mb{
+    margin-bottom: $max-margin;
+}
+.visit-block{
+    @include set-block(100%, fit-content, $green);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    .my-photo-block{
+        width: 95%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .info-text{
+        width: 100%;
+        padding: 5.5% 4.7% 5.5% 14.7%;
+        text-align: right;
+        .main-info{
+            margin-bottom: 30px;
+            .my-name{
+                width: 100%;
+            }
+            > div{
+                margin-bottom: $min-margin;
+                .job-name{
+                    @include white-text-with-weight(22px, 500);
+                }
+                .blue-line{
+                    display: inline-block;
+                    background-color: $blue;
+                    height: 15px;
+                }
+                .min{
+                    width: 26px;
+                    margin-right: 10px;
+                }
+                .max{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .contacts{
+        display: inline-block;
+        width: 85%;
+        padding: 10px 10px 0 65px;
+        text-align: left;
+        margin-bottom: 30px;
+        .contact{
+            margin-bottom: 17px;
+            i{
+                color: white;
+                margin-right: 24px;
+            }
+            @include white-text-with-weight(22px, 500);
+        }
+    }
+    .social-networks{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.about-me{
+    background-color: $blue;
+    padding: 40px 0;
+    .white-header{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .text{
+        @include white-text-with-weight(27px, normal);
+    }
+}
+.heading{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-bottom: $after-heading-margin;
+    div{
+        margin-right: 35px;
+    }
+}
+.establishments{
+    display: flex;
+    gap: 20px;
+}
+.establishment{
+    width: 100%;
+    padding: 38px 50px;
+    background-color: $gray;
+    border-radius: 15px;
+    display: grid;
+    
+    .establishment-name{
+        text-align: center;
+        @include white-text-with-weight(45px, 500);
+        margin-bottom: 40px;
+    }
+    ul{
+        display: block;
+        @include white-text-with-weight(27px, 300);
+        margin-bottom: 40px;
+    }
+    .date{
+        display: grid;
+        text-align: center;
+        align-items: end;
+        @include white-text-with-weight(16px, 300);
+    }
+}
+.experience-block-big{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(3, fit-content);
+    .gr1{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .figure{
+        grid-area: 1 / 2 / 5 / 3;
+        
+    }
+    .gr2{
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .gr3{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .gr4{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .gr5{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .gr6{
+        grid-area: 3 / 2 / 4 / 3;;
+    }
+    .gr7{
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    .gr8{
+        grid-area: 4 / 3 / 5 / 4;
+    }
+    .gr9{
+        grid-area: 5 / 2 / 6 / 3;
+    }
+    .gr10 {
+        grid-area: 5 / 1 / 6 / 2
+    }
+}
+.experience-block-small{
+    display: none;
+    grid-template-columns: 30% 70%;
+    .gr1 { grid-area: 1 / 1 / 2 / 2; }
+    .gr2 { grid-area: 1 / 2 / 2 / 3; }
+    .gr3 { grid-area: 2 / 1 / 3 / 2; }
+    .gr4 { grid-area: 2 / 2 / 3 / 3; }
+    .gr5 { grid-area: 3 / 1 / 4 / 2; }
+    .gr6 { grid-area: 3 / 2 / 4 / 3; }
+    .gr7 { grid-area: 4 / 1 / 5 / 2; }
+    .gr8 { grid-area: 4 / 2 / 5 / 3; }
+    .gr9 { grid-area: 5 / 1 / 6 / 3; }
+    .gr10 { grid-area: 5 / 2 / 6 / 3; }
+    .gr11 { grid-area: 1 / 1 / 5 / 2; }
+}
+.contains{
+    padding-bottom: 10px;
+}
+.figures{
+    display: flex;
+    
+    .circle-small-wrapper{
+        width: fit-content;
+        .circle{
+            @include set-block(30px, 30px, $green);
+            border-radius: 30px;
+        }
+    }
+    .line-small-wrapper{
+        width: 100%;
+        .line{
+            margin-top: 15px;
+            @include set-block(100%, 2px, $green);
+        }
+    }
+}
+.gr7{  
+    .horizontal-line{
+        @include set-block(2px, 100%, $green);
+    }
+}
+.gr11{  
+    padding-left: 13px;
+    .horizontal-line{
+        @include set-block(2px, 100%, $green);
+    }
+}
+.experience{
+    height: fit-content;
+    display: inline-block;
+    background-color: white;
+    padding: 30px 60px 30px 40px;
+    border-left: 5px $blue solid;
+    width: 100%;
+    .experience-name{
+        @include gray-text-with-weight(24px, 600);
+        margin-bottom: 10px;
+    }
+    .experience-info{
+        @include gray-text-with-weight(22px, 300);
+        margin-bottom: 10px;
+    }
+    .exp-date{
+        margin-bottom: 20px
+    }
+    ul{
+        margin: 0;
+    }
+    li{
+        @include gray-text-with-weight(19px, 300);
+    }
+}
+
+.vertical-line{
+    @include set-block(2px, 100%, $green);
+    margin-left: 50%;
+}
+.circle-wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    &.odd{
+        .circle{
+            right: 30px;
+        }
+    }
+    &.even{
+        .even-first-block{
+            display: flex;
+            justify-content: end;
+        }
+        .circle{
+            left: 30px;
+        }
+    }
+    .horizontal-line{
+        @include set-block(100%, 2px, $green);
+        margin-top: 30px;
+    }
+    .circle{
+        @include set-block(60px, 60px, $green);
+        border-radius: 60px;
+        position: relative;
+    }
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    .skills-block{
+        background-color: $green;
+        border-radius: 20px;
+        padding: 50px 35px;
+        .skills-head{
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 50px;
+
+        }
+        > div{
+            font-weight: 700;
+            .skill{
+                font-size: 20px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .progress-line{
+                @include set-block(100%, 5px, $gray);
+                position: relative;
+                .upload{
+                    background-color: white;
+                    height: 100%;
+                }
+                
+            }
+            .progress-circle{
+                @include set-block(25px, 25px, white);
+                border-radius: 25px;
+                position: relative;
+                z-index: 1;
+                
+            }
+            .progress{
+                margin-bottom: 20px;
+                &.pg1{
+                    .progress-line{
+                        .upload{
+                            width: 70%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 70%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg2{
+                    .progress-line{
+                        .upload{
+                            width: 90%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 90%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg3{
+                    .progress-line{
+                        .upload{
+                            width: 60%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 60%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg4{
+                    .progress-line{
+                        .upload{
+                            width: 90%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 90%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg5{
+                    .progress-line{
+                        .upload{
+                            width: 80%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 80%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg6{
+                    .progress-line{
+                        .upload{
+                            width: 68%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 68%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg7{
+                    .progress-line{
+                        .upload{
+                            width: 50%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 50%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg8{
+                    .progress-line{
+                        .upload{
+                            width: 40%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 40%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg9{
+                    .progress-line{
+                        .upload{
+                            width: 90%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 90%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg10{
+                    .progress-line{
+                        .upload{
+                            width: 90%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 90%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg11{
+                    .progress-line{
+                        .upload{
+                            width: 35%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 35%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg12{
+                    .progress-line{
+                        .upload{
+                            width: 30%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 30%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg13{
+                    .progress-line{
+                        .upload{
+                            width: 50%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 50%;
+                        margin-left: -12.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.project{
+    margin-bottom: 90px;
+    img{
+        position: absolute;
+        z-index: 1;
+    }
+    .wrapper-proj{
+        width: 100%;
+        .project-info{
+            height: 435px;
+            max-height: 435px;
+            position: relative;
+            width: 78%;
+            background-color: white;
+            border-top: 5px solid $blue;
+            padding: 40px 30px 40px 150px;
+            left: 393px;
+            top: 50px;
+            // .project-name{
+            //     text-align: right;
+            //     @include gray-text-with-weight(55px, 800);
+            //     margin-bottom: 10px;
+            // }
+            // .project-repo{
+            //     text-align: right;
+            //     font-family: 'Montserrat', sans-serif;
+            //     font-weight: 500;
+            //     font-size: 14px;
+            //     margin-bottom: 10px;
+            // }
+            // .green-line-wrapper{
+            //     text-align: right;
+            //     margin-bottom: 10px;
+            // }
+            // .green-line{
+            //     display: inline-block;
+            //     background-color: $green;
+            //     height: 17px;
+            //     &.min{
+            //         width: 25px;
+            //         margin-right: 17px;
+            //     }
+            //     &.max{
+            //         width: 60%;
+            //     }
+            // }
+            // .project-text{
+            //     @include gray-text(15px);
+            //     span{
+            //         font-weight: 600;
+            //     }
+            // }
+            // .triangle{
+            //     position: absolute;
+            //     border-top: 57px solid $gray;
+            //     border-right: 42px solid transparent;
+            //     bottom: 0px;
+            //     right: 100%;
+            //     left: 0px;
+            // }
+        }
+    }
+}
+.project-name{
+    text-align: right;
+    @include gray-text-with-weight(55px, 800);
+    margin-bottom: 10px;
+}
+.project-repo{
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.green-line-wrapper{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.green-line{
+    display: inline-block;
+    background-color: $green;
+    height: 17px;
+    &.min{
+        width: 25px;
+        margin-right: 17px;
+    }
+    &.max{
+        width: 60%;
+    }
+}
+.project-text{
+    @include gray-text(15px);
+    span{
+        font-weight: 600;
+    }
+}
+.project-small{
+    display: none;
+    background-color: white;
+    border-top: 5px solid $blue;
+    padding: 10px 20px 15px 20px;
+    margin-bottom: 40px;
+    .screen-wrapper{
+        text-align: center;
+        margin-bottom: 20px;
+        img{
+            width: 235px;
+        }
+    }
+    .green-line-wrapper{
+        margin-bottom: 20px;
+        .green-line{
+            height: 8px;
+            &.min{
+                width: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+    .project-name{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .project-repo{
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+    .project-text{
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1664px) {
+    .visit-block{
+        .white-header{
+            font-size: 45px;
+        }
+        .visit-block{
+            .info-text{
+                .main-info{
+                    > div{
+                        .job-name{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }   
+        .contacts{
+            .contact{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 1551px){
+    .visit-block{
+        .contacts{
+            .contact{
+                font-size: 16px;
+            }
+        }
+    }
+    .skills{
+        .skills-block{
+            .skills-head{
+                font-size: 16px;
+            }
+            > div{
+                .skill{
+                    font-size: 10px;
+                }
+                .progress-circle{
+                    width: 15px;
+                    height: 15px;
+                    bottom: 5px
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1500px){
+    .project{
+        img{
+            width: 335px;
+        }
+        .wrapper-proj{
+            .project-info{
+                height: 335px;
+                left: 293px;
+                padding: 40px 30px 40px 80px;
+                .project-name{
+                    font-size: 35px;
+                   
+                }
+                .project-repo{
+                    font-size: 12px;
+                }
+                .project-text{
+                    font-size: 11px;
+                }
+            }
+        }
+        
+    }
+}
+@media(max-width: 1330px){
+    .visit-block .info-text .main-info > div .min{
+        margin-right: 5px;
+    }
+    .visit-block{
+        .main-info{
+            margin-bottom: 20px;
+            .my-name{
+                font-size: 35px;
+            }
+            .job-name{
+                font-size: 12px;
+            }
+            
+        }
+        .contacts{
+            margin-bottom: 20px;
+            .contact{
+                margin-bottom: 15px;
+                font-size: 12px;
+                i{
+                    margin-right: 14px;
+                }
+            }
+        }
+        .social-networks{
+            img{
+                width: 50px;
+            }
+        }   
+    }
+}
+@media (max-width: 1196px){
+    .establishment{
+        .establishment-name{
+            font-size: 25px;
+        }
+        ul{
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 1140px){
+    
+    .about-me{
+        .text{
+            font-size: 17px;
+        }
+    }
+    .experience{
+        
+        .experience-name{
+            font-size: 17px;
+        }
+        .experience-info{
+            font-size: 12px;
+        }
+        li{
+            font-size: 13px;
+        }
+    }
+    .experience-block{
+        .experience{
+            padding: 15px 40px 15px 20px;
+            .experience-name{
+                font-size: 17px;
+            }
+            .experience-info{
+                font-size: 12px;
+            }
+            li{
+                font-size: 13px;
+            }
+        }
+    }
+    .project{
+        img{
+            width: 235px;
+        }
+        .wrapper-proj{
+            .project-info{
+                height: 235px;
+                left: 193px;
+                padding: 10px 20px 10px 80px;
+                .project-name{
+                    font-size: 25px;
+                    margin-bottom: 0px;
+                }
+                .project-repo{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+                .green-line-wrapper{
+                    margin-bottom: 5px;
+                    .green-line{
+                        height: 10px;
+                    }
+                }
+                .project-text{
+                    font-size: 9px;
+                }
+            }
+        }
+        
+    }
+}
+@media (max-width: 1112px){
+    .visit-block{
+        .info-text{
+            .main-info{
+                > div{
+                    .max{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 1041px) {
+    .visit-block{
+        .info-text{
+            padding: 5.5% 4.7% 5.5% 10%;
+        }
+    }
+}
+@media (max-width: 954px){
+    .visit-block{
+        .main-info{
+            margin-bottom: 20px;
+            .my-name{
+                font-size: 30px;
+            }
+            .job-name{
+                font-size: 15px;
+            }
+        }
+        .contacts{
+            padding: 10px 10px 0 55px;
+            .contact{
+                font-size: 10px;
+            }
+        }
+    }
+    .skills{
+        grid-column-gap: 15px;
+    }
+    .experience-block{
+        .experience{
+            li{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 920px){
+    .establishment{
+        padding: 38px 10px;
+        .establishment-name{
+            font-size: 22px;
+        }
+        ul{
+            font-size: 14px;
+        }
+        .date{
+            font-size: 10px;
+        }
+    }
+    .proj-container{
+        width: 95%;
+    }
+    .project{
+        .wrapper-proj{
+            .project-info{
+                padding: 5px 10px 10px 50px;
+                .project-text{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 827px){
+    .skills-container{
+        width: 100%;
+    }
+    .proj-container{
+        width: 95%;
+    }
+    .project{
+        img{
+            width: 195px;
+        }
+        .wrapper-proj{
+            .project-info{
+                padding: 0px 10px 10px 50px;
+                height: 195px;
+                left: 153px;
+                .project-name{
+                    margin-bottom: 0;
+                }
+                .project-repo{
+                    margin-bottom: 0;
+                }
+                .green-line-wrapper{
+                    margin-bottom: 0;
+                }
+                .project-text{
+                    font-size: 8px;
+                }
+            }
+        }
+    }   
+}
+@media(max-width: 813px){
+    .visit-block{
+        .info-text{
+            padding: 5.5% 4.7% 5.5% 8%;
+            .main-info{
+                .my-name{
+                    font-size: 25px;
+                }
+                .job-name{
+                    font-size: 16px;
+                }
+            }
+        }
+        .contacts{
+            padding: 10px 10px 0 45px;
+        }
+    }
+}
+@media (max-width: 751px){
+    .visit-block{
+        .contacts{
+            padding: 10px 10px 0 35px;
+        }
+    }
+}
+@media(max-width: 739px){
+    .project{
+        .wrapper-proj{
+            .project-info{
+                &.reviews{
+                    padding: 0px 0px 10px 45px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .code-img-block{
+        display: none;
+    }
+    .wrapper{
+        position: initial;
+        padding: 0;
+    }
+    .white-header{
+        font-size: 25px;
+    }
+    .gray-header{
+        font-size: 35px;
+    }
+    .vb-container{
+        width: 100%;
+        padding-top: 40px;
+        background-image: url(img/code-full.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .visit-block{
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        .my-photo-block{
+            width: fit-content;
+            img{
+                width: 500px;
+            }
+        }
+        .info-text{
+            .main-info{
+                margin-bottom: 20px;
+                .my-name{
+                    font-size: 35px;
+                }
+                > div{
+                    .job-name{
+                        font-size: 16px;
+                    }
+                    .blue-line{
+                        height: 8px;
+                    }
+                    .min{
+                        width: 15px;
+                    }
+                }
+            }
+            .contacts{
+                width: fit-content;
+                .contact{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .mb{
+        margin-bottom: 100px;
+    }
+    .about-me{
+        padding: 20px 0;
+        .white-header{
+            margin-bottom: 20px;
+        }
+        .text{
+            font-size: 12px;
+        }
+    }
+    .container:not(.vb-container, .educ-container, .skills-container, .proj-container){
+        width: 95%;
+    }
+    .heading{
+        margin-bottom: 40px;
+        img{
+            width: 85px;
+        }
+        div{
+            margin-right: 15px;
+        }
+    }
+    .educ-container{
+        width: 100%;
+    }
+    .establishments{
+        display: grid;
+        gap: 10px;
+        .establishment{
+            padding: 20px;
+            border-radius: 0;
+            .establishment-name{
+                font-size: 20px;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            ul{
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+            .date{
+                font-size: 9px;
+            }
+        }
+    }
+    .experience-block-big{
+        display: none;
+    }
+    .experience-block-small{
+        display: grid;
+    }
+    .experience{
+        padding: 10px 37px 30px 10px;
+        .experience-name{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .experience-info{
+            margin-bottom: 5px;
+        }
+        ul{
+            padding-left: 10px;
+        }
+        li{
+            font-size: 9px;
+        }
+    }
+    .skills-container{
+        width: 100%;
+    }
+    .skills{
+        grid-template-columns: inherit;
+        gap: 10px;
+        .skills-block{
+            padding: 20px;
+            .skills-head{
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            .skill{
+                font-size: 11px;
+            }
+            > div{
+                .skill{
+                    margin-bottom: 5px;
+                }
+                .progress{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .proj-container{
+        width: 100%;
+    }
+    .projects-full{
+        display: none;
+    }
+    .project-small{
+        display: block;
+    }
+}
+@media(max-width: 522px){
+    .gray-header{
+        font-size: 25px;
+    }
+    .white-header{
+        font-size: 25px;
+    }
+    .visit-block{
+        width: 95%;
+        .my-photo-block{
+            width: 100%;
+            img{
+                width: inherit;
+            }
+        }
+        .info-text{
+            .main-info{
+                .my-name{
+                    font-size: 25px;
+                }
+            }
+                > div{
+                    .job-name{
+                        font-size: 12px;
+                    }
+                }
+                .contacts{
+                    .contact{
+                        font-size: 9px;
+                    }
+                }
+            }
+    }
+    .heading{
+        img{
+            width: 55px;
+        }
+    }
+}
+@media (max-width: 308px){
+    .skills{
+        .skills-block{
+            .skills-head{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 280px){
+    .gray-header{
+        font-size: 20px;
+    }
+    .heading{
+        div{
+            margin-right: 5px;
+        }
+        img{
+            width: 45px;
+        }
+    }
+    .visit-block{
+        .info-text{
+            .main-info{
+                .my-name{
+                    font-size: 21px;
+                }
+                >div{
+                    .job-name{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .contacts{
+                .contact{
+                    font-size: 8px;
+                }
+            }
+        }
+        .social-networks{
+            img{
+                width: 40px;
+            }
+        }
+    }
+    .about-me{
+        font-size: 10px;
+    }
+    .establishments{
+        .establishment{
+            .establishment-name{
+                font-size: 14px;
+            }
+            ul{
+                padding: 0;
+                font-size: 10px;
+            }
+            .date{
+                font-size: 8px;
+            }
+        }
+    }
+    .experience-block-small{
+        grid-template-columns: 20% 80%;
+    }
+    .experience{
+        .experience-name{
+            font-size: 12px;
+        }
+        .experience-info{
+            font-size: 9px;
+        }
+        li{
+            font-size: 8px;
+        }
+    }
+    .skills{
+        .skills-block{
+            .skills-head{
+                font-size: 19px;
+            }
+        }
+    }
+    .project-small{
+        .project-repo{
+            font-size: 8px;
+        }
+    }
+}
