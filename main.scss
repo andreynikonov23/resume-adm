@@ -428,16 +428,40 @@ $after-heading-margin: 85px;
                 &.pg4{
                     .progress-line{
                         .upload{
-                            width: 90%;
+                            width: 80%;
                         }
                         bottom: 15px;
                     }
                     .progress-circle{
-                        left: 90%;
+                        left: 80%;
                         margin-left: -12.5px;
                     }
                 }
                 &.pg5{
+                    .progress-line{
+                        .upload{
+                            width: 85%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 85%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg6{
+                    .progress-line{
+                        .upload{
+                            width: 50%;
+                        }
+                        bottom: 15px;
+                    }
+                    .progress-circle{
+                        left: 50%;
+                        margin-left: -12.5px;
+                    }
+                }
+                &.pg7{
                     .progress-line{
                         .upload{
                             width: 80%;
@@ -449,99 +473,27 @@ $after-heading-margin: 85px;
                         margin-left: -12.5px;
                     }
                 }
-                &.pg6{
-                    .progress-line{
-                        .upload{
-                            width: 68%;
-                        }
-                        bottom: 15px;
-                    }
-                    .progress-circle{
-                        left: 68%;
-                        margin-left: -12.5px;
-                    }
-                }
-                &.pg7{
-                    .progress-line{
-                        .upload{
-                            width: 50%;
-                        }
-                        bottom: 15px;
-                    }
-                    .progress-circle{
-                        left: 50%;
-                        margin-left: -12.5px;
-                    }
-                }
                 &.pg8{
                     .progress-line{
                         .upload{
-                            width: 40%;
+                            width: 70%;
                         }
                         bottom: 15px;
                     }
                     .progress-circle{
-                        left: 40%;
+                        left: 70%;
                         margin-left: -12.5px;
                     }
                 }
                 &.pg9{
                     .progress-line{
                         .upload{
-                            width: 90%;
+                            width: 80%;
                         }
                         bottom: 15px;
                     }
                     .progress-circle{
-                        left: 90%;
-                        margin-left: -12.5px;
-                    }
-                }
-                &.pg10{
-                    .progress-line{
-                        .upload{
-                            width: 90%;
-                        }
-                        bottom: 15px;
-                    }
-                    .progress-circle{
-                        left: 90%;
-                        margin-left: -12.5px;
-                    }
-                }
-                &.pg11{
-                    .progress-line{
-                        .upload{
-                            width: 35%;
-                        }
-                        bottom: 15px;
-                    }
-                    .progress-circle{
-                        left: 35%;
-                        margin-left: -12.5px;
-                    }
-                }
-                &.pg12{
-                    .progress-line{
-                        .upload{
-                            width: 30%;
-                        }
-                        bottom: 15px;
-                    }
-                    .progress-circle{
-                        left: 30%;
-                        margin-left: -12.5px;
-                    }
-                }
-                &.pg13{
-                    .progress-line{
-                        .upload{
-                            width: 50%;
-                        }
-                        bottom: 15px;
-                    }
-                    .progress-circle{
-                        left: 50%;
+                        left: 80%;
                         margin-left: -12.5px;
                     }
                 }
